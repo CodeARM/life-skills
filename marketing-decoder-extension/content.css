@@ -1,0 +1,113 @@
+#marketing-decoder-panel {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 360px;
+  max-width: calc(100vw - 48px);
+  background: #1a1a2e;
+  color: #e8e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.08);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  z-index: 2147483647;
+  overflow: hidden;
+  animation: md-slide-in 0.2s ease-out;
+}
+
+@keyframes md-slide-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#marketing-decoder-panel .md-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #16213e;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+#marketing-decoder-panel .md-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #a78bfa;
+}
+
+#marketing-decoder-panel .md-close {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+#marketing-decoder-panel .md-close:hover {
+  color: #e8e8f0;
+}
+
+#marketing-decoder-panel .md-body {
+  padding: 16px;
+  min-height: 60px;
+}
+
+#marketing-decoder-panel .md-result {
+  margin: 0;
+  line-height: 1.6;
+  color: #d4d4e8;
+  white-space: pre-wrap;
+}
+
+#marketing-decoder-panel .md-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #888;
+}
+
+#marketing-decoder-panel .md-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(167,139,250,0.3);
+  border-top-color: #a78bfa;
+  border-radius: 50%;
+  animation: md-spin 0.7s linear infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@keyframes md-spin {
+  to { transform: rotate(360deg); }
+}
+
+#marketing-decoder-panel .md-footer {
+  padding: 8px 16px 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#marketing-decoder-panel .md-copy {
+  background: rgba(167,139,250,0.15);
+  border: 1px solid rgba(167,139,250,0.3);
+  color: #a78bfa;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 6px;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+
+#marketing-decoder-panel .md-copy:hover {
+  background: rgba(167,139,250,0.25);
+}
+
+#marketing-decoder-panel .md-copy:empty {
+  display: none;
+}
