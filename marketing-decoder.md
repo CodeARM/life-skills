@@ -23,7 +23,7 @@ a non-expert could understand.
 
 ## Output format
 
-- **Under 200 words**, ideally much less (aim for 50–100 words)
+- **Under 100 words**, ideally much less (aim for 50–100 words)
 - Plain prose, no bullet points unless listing genuinely distinct features
 - No hedging filler ("it's worth noting that...", "essentially...")
 - One short paragraph is usually enough
